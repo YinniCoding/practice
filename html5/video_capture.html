@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta author="jihong.zjh">
+	<title>播放视频并暂停截图</title>
+</head>
+<body>
+	<video id="video" controls="controls" autoplay>
+		<source src="http://upload.wikimedia.org/wikipedia/commons/7/75/Big_Buck_Bunny_Trailer_400p.ogg">
+	</video>
+
+	<a href="#" id="pause_link">暂停并截图</a>
+	<canvas id="canvas" style="border:2px solid #000099" width="800" height="600">
+		no canvas availabel
+	</canvas>
+</body>
+<script>
+	function pause_and_capture(){
+		var v = document.getElementById("video");
+		v.pause();
+		var c = document.getElementById("canvas");
+		var ctx = c.getContext("2d");
+		ctx.drawImage(v,1,1);
+	}
+	var pause_link = document.getElementById("pause_link");
+	pause_link.addEventListener("click",pause_and_capture,false);
+</script>
+</html>
