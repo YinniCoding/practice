@@ -4,6 +4,8 @@
   
   ![](http://ww1.sinaimg.cn/mw690/62d95157gw1f7sxzl22jzj20j20aqgm7.jpg)
 
+  代码解析见：[手写组件化轮播](http://www.5941740.cn/2016/09/14/carousel/)
+  
 ### 功能包括：
   1. 点击左右箭头翻页 （1s完成）
   2. 点击小圆点翻页
