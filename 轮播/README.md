@@ -12,9 +12,13 @@
   [点击Demo]()查看效果
 
 ### 使用方式
+
 依赖jQuery
+
 1. HTML容器
+
   容器需要包括如下结构
+  
   ```
   <div class="className">
     <ul id="ulName">
